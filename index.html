@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="password">
+            <h2>Şifre Oluşturucu</h2>
+            <div class="passwordbox">
+                <input type="text">
+                <span></span>
+            </div>
+            <div class="pass-indicator">
+                <div class="pass-length">
+                    <label class="title">Şifre Uzunluğu</label>
+                    <span></span>
+                </div>
+                <input type="range" min="1" max="15" value="7" step="1">
+            </div>
+            <div class="password-condition">
+                <label class="title">Şifre Şartları</label>
+                <ul class="options">
+                    <li class="option">
+                        <input type="checkbox" checked id="lowercase">
+                        <label for="lowercase">Küçük Harfler(a-z)</label>
+                    </li>
+    
+                    <li class="option">
+                        <input type="checkbox" checked id="uppercase">
+                        <label for="uppercase">BÜyük Harfler(A-Z)</label>
+                    </li>
+    
+                    <li class="option">
+                        <input type="checkbox" checked id="numbers">
+                        <label for="numbers">Rakamlar (0-9)</label>
+                    </li>
+    
+                    <li class="option">
+                        <input type="checkbox" checked id="symbols">
+                        <label for="symbols">Semboller(!-.-+,-,...)</label>
+                    </li>
+    
+                    <li class="option">
+                        <input type="checkbox" checked id="exc-duplicate">
+                        <label for="exc-duplicate">Yinelemeyi Kapat</label>
+                    </li>
+    
+                    <li class="option">
+                        <input type="checkbox" checked id="spaces">
+                        <label for="spaces">Boşlukları Dahil Et</label>
+                    </li>
+                </ul>
+            </div>
+            <button class="generate-btn">Şifre Oluştur</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
